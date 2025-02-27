@@ -18,6 +18,13 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Check if Player exists
+        if (target == null)
+        {
+            enabled = false;
+            return;
+        }
+        
         //Where cam should go
         //Lerp - Linear Interpolation (Smoothens movement?)
         //Move Towards

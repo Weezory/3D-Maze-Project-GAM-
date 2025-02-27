@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // the dot is there to access
         // a functionality of "transform"
-        transform.Translate(direction * Time.deltaTime * speed, Space.World);       
+        transform.Translate(direction * Time.deltaTime * speed);       
     }
 
     private void OnMove(InputValue value)
@@ -37,7 +37,5 @@ public class PlayerMovement : MonoBehaviour
             0,
             inputValue.y
         );
-        
-        transform.rotation = Quaternion.LookRotation(direction, Vector3.up);
     }
 }
