@@ -42,7 +42,6 @@ public class Health : MonoBehaviour
          transform.position = respawnPosition;
       
          // Reset points to 5
-         points = 5;
          
       if (points < 1)
       { 
